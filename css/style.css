@@ -11,6 +11,15 @@ body{
 section{
     padding: 100px 0;
 }
+hr{
+    width: 35px;
+    background: #fff;
+    border: none;
+    height: 5px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 /* ========= Features Part ======== */
 
@@ -20,14 +29,36 @@ section{
 #features h1{
     font-size: 2rem;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 #features p{
     margin: 0 0 16px;
 }
 #features h3{
     font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 .ficon{
     margin-bottom: 20px;
     font-size: 3rem;
+}
+.feature{
+    padding: 0 15px;
+}
+.badge{
+    background: #28a745;
+    font-weight: 600;
+    font-size: 1.313rem;
+    padding: 5.25px 8.4px;
+    border-radius: 5px;
+}
+.read-more-btn{
+    background: #fff;
+    color: var(--themeOrange);
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    display: inline-block;
 }
