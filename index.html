@@ -13,14 +13,47 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <div class="header-top">
+            <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a class="text-decoration-none" href="">See here for more details</a>
+        </div>
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+                <a id="company-name" class="text-white text-decoration-none" href="/" class="navbar-brand">Whiskey Drop</a>
+                <ul class="list-style-none d-flex align-items-center">
+                    <li><a class="text-white text-decoration-none" href="#">Home</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">About</a></li>
+                    <li><a id="ddtoggle" class="text-white text-decoration-none position-relative" href="javascript:void(0)" onclick="dropDownTgl()">Whiskeys</a>
+                        <ul id="drop-down" class="position-absolute list-style-none">
+                            <li><a class="text-black text-decoration-none" href="#">Irish</a></li>
+                            <li><a class="text-black text-decoration-none" href="#">Scotch</a></li>
+                            <li><a class="text-black text-decoration-none" href="#">Japanese</a></li>
+                            <li><a class="text-black text-decoration-none" href="#">American</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            
+            <div class="d-flex align-items-center">
+                <p class="nav-quote"><i>Great whiskey delivered to your door</i></p>
+                <a href="/login" class="btn text-decoration-none">Sign In / Sign Up</a>
+            </div>
+        </nav>
+    </header>
     <main>
-        <!-- ========== Quotes Part ========= -->
-        <section id="home" class="position-relative">
-            <video id="background-video" autoplay loop muted poster="videos/bg.mp4">
-            <source src="videos/bg.mp4" type="video/mp4">
+        <!-- ========== Home Part ========= -->
+        <section id="home" class="position-relative d-flex justify-content-center align-items-center">
+            <div class="text-center d-flex flex-column text-white justify-content-center align-items-center">
+                <h1 class="">The finest whiskeys delivered to your doorstep.</h1>
+                <hr>
+                <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+                    <s class="">€19.99</s>
+                    <strong><mark>First one is free!</mark></strong></p>
+                <p><button class="">Sign Up!</button></p>
+                <p class="sml"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
+            </div>
+            <video id="background-video" autoplay loop muted>
+            <source src="https://vod-progressive.akamaized.net/exp=1639517546~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F6%2F22%2F550033434%2F2607343947.mp4~hmac=ba7ead4c756423a293624363af268bf52e1afed1b4d4a1ebbf9ffd3ccf3d1213/vimeo-prod-skyfire-std-us/01/6/22/550033434/2607343947.mp4?filename=Aurora+Borealis+-+74183.mp4" type="video/mp4">
         </video>
-            <div id="particles-js" class="overlay"></div>
         </section>
 
         <!-- ========== Quotes Part ========= -->
@@ -28,31 +61,27 @@
             <div class="container">
                 <h1 class="text-center">QUOTES:</h1>
                 <hr>
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="col-2">
-                        <div class="media d-flex justify-content-center align-items-center">
-                            <div class="">
-                                <img src="images/girl-image.png" height="100" width="100">
-                            </div>
-                            <div class="media-body">
-                                <blockquote class="blockquote">
-                                    <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                                    <div class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></div>
-                                </blockquote>
-                            </div>
+                <div class="media-box d-flex justify-content-center align-items-center">
+                    <div class="media d-flex justify-content-center align-items-center">
+                        <div class="media-img">
+                            <img src="images/girl-image.png" height="100" width="100">
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                                <div class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></div>
+                            </blockquote>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="media d-flex justify-content-center align-items-center">
-                            <div class="">
-                                <img src="images/guy-image.png" height="100" width="100">
-                            </div>
-                            <div class="media-body">
-                                <blockquote class="blockquote">
-                                    <p>I haven't been sober for months!</p>
-                                    <div class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></div>
-                                </blockquote>
-                            </div>
+                    <div class="media d-flex justify-content-center align-items-center">
+                        <div class="media-img">
+                            <img src="images/guy-image.png" height="100" width="100">
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I haven't been sober for months!</p>
+                                <div class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></div>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
@@ -63,33 +92,26 @@
             <div class="container">
                 <h1 class="text-center">FEATURES:</h1>
                 <hr>
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="col-3">
-                        <div class="feature">
-                            <h3 class="text-center"><i class="fas fa-gift d-block text-center ficon"></i> Feature 1 <span class="badge">New!</span></h3>
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="text-center"><a class="read-more-btn text-decoration-none" href="">Read More</a></p>
-                        </div>
+                <div class="features-box d-flex flex-row justify-content-center align-items-center">
+                    <div class="feature">
+                        <h3 class="text-center"><i class="fas fa-gift d-block text-center ficon"></i> Feature 1 <span class="badge">New!</span></h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-center"><a class="read-more-btn text-decoration-none" href="">Read More</a></p>
                     </div>
-                    <div class="col-3">
-                        <div class="feature">
-                            <h3 class="text-center"><i class="fas fa-credit-card d-block text-center ficon"></i> Feature 2 </h3>
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="text-center"><a class="read-more-btn text-decoration-none" href="">Read More</a></p>
-                        </div>
+                    <div class="feature">
+                        <h3 class="text-center"><i class="fas fa-credit-card d-block text-center ficon"></i> Feature 2 </h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-center"><a class="read-more-btn text-decoration-none" href="">Read More</a></p>
                     </div>
-                    <div class="col-3">
-                        <div class="feature">
-                            <h3 class="text-center"><i class="fas fa-times-circle d-block text-center ficon"></i> Feature 3 </h3>
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="text-center"><a class="read-more-btn text-decoration-none" href="">Read More</a></p>
-                        </div>
+                    <div class="feature">
+                        <h3 class="text-center"><i class="fas fa-times-circle d-block text-center ficon"></i> Feature 3 </h3>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-center"><a class="read-more-btn text-decoration-none" href="">Read More</a></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

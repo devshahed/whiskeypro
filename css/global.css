@@ -11,15 +11,6 @@
     width: 90%;
     margin: auto;
 }
-.col-1{
-    width: 100%;
-}
-.col-2{
-    width: 50%;
-}
-.col-3{
-    width: 33.33%;
-}
 .d-flex{
     display: flex;
 }
@@ -32,6 +23,9 @@
 .flex-column{
     flex-direction: column;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .justify-content-start{
     justify-content: start;
 }
@@ -40,6 +34,9 @@
 }
 .justify-content-end{
     justify-content: end;
+}
+.justify-content-between{
+    justify-content: space-between;
 }
 .align-items-center{
     align-items: center;
@@ -53,6 +50,15 @@
 .text-decoration-none{
     text-decoration: none;
 }
+.text-black{
+    color: black;
+}
 .position-relative{
     position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.list-style-none{
+    list-style: none;
 }

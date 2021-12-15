@@ -22,10 +22,111 @@ hr{
     margin-bottom: 1rem;
 }
 
+/* ========= Header part ========= */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.header-top{
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec802;
+    color: #856404;
+
+}
+.header-top a{
+    color: #007bff;
+}
+#company-name{
+    font-size: 1.25rem;
+    padding: 5px 0;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+nav{
+    background: rgba(0, 0, 0, 0.541);
+    padding: 10px;
+}
+nav ul li{
+    padding: 0 5px;
+}
+nav ul li a{
+    padding: 5px;
+    font-weight: 600;
+}
+.nav-quote{
+    color: rgba(255,255,255,.5);
+    padding: 0 10px;
+}
+#drop-down{
+    background: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none;
+}
+#ddtoggle::after{
+    content: '';
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #e8e8e8;
+    top: 40%;
+    right: -10px;
+}
+nav .btn{
+    background: var(--themeOrange);
+    border-radius: 20px;
+    padding: 6px 12px;
+    color: white;
+    font-weight: 600;
+}
 /* ========= Home Part ======== */
 
 #home{
     height: 100vh;
+}
+#home h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#home hr{
+    width: 75px;
+    height: 5px;
+    background: var(--themeOrange);
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #a7a7a7;
+    margin: 25px 0;
+}
+#home mark{
+    padding: .2em;
+    background-color: #fcf8e3;
+}
+#home button{
+    color: white;
+    background-color: var(--themeOrange);
+    border-color: var(--themeOrange);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+    padding: 8px 12px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#home .sml{
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+    font-weight: 400;
 }
 #background-video {
     width: 100%;
@@ -36,14 +137,7 @@ hr{
     right: 0;
     top: 0;
     bottom: 0;
-  }
-  .overlay{
-      position: absolute;
-      background: rgba(112, 28, 248, 0.37);
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
+    z-index: -2;
   }
 
 /* ========= Quotes Part ======== */
@@ -76,7 +170,10 @@ hr{
 #quotes p{
     margin-bottom: 1rem;
 }
-
+.media{
+    width: 50%;
+    padding: 5px;
+}
 /* ========= Features Part ======== */
 
 #features{
@@ -117,4 +214,31 @@ hr{
     border-radius: 20px;
     font-size: 0.875rem;
     display: inline-block;
+}
+
+/* ======== Media queries ======= */
+@media only screen and (max-width: 976px) {
+    .features-box{
+        flex-wrap: wrap;
+    }
+    .feature{
+        flex: 50%;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .features-box, .media-box{
+        flex-direction: column;
+    }
+    .media{
+        width: 100%;
+        justify-content: start;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .ficon, .media-img {
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
 }
