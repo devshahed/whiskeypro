@@ -17,25 +17,30 @@
         <div class="header-top">
             <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a class="text-decoration-none" href="">See here for more details</a>
         </div>
-        <nav class="d-flex justify-content-between align-items-center">
-            <div class="d-flex">
+        <nav class="d-flex flex-row justify-content-between">
+            <div class="nav-container d-flex">
                 <a id="company-name" class="text-white text-decoration-none" href="/" class="navbar-brand">Whiskey Drop</a>
-                <ul class="list-style-none d-flex align-items-center">
+                <ul id="sidebar" class="nav-links list-style-none d-flex align-items-center">
                     <li><a class="text-white text-decoration-none" href="#">Home</a></li>
                     <li><a class="text-white text-decoration-none" href="#">About</a></li>
-                    <li><a id="ddtoggle" class="text-white text-decoration-none position-relative" href="javascript:void(0)" onclick="dropDownTgl()">Whiskeys</a>
+                    <li class="position-relative"><a id="ddtoggle" class="text-white text-decoration-none" href="javascript:void(0)" onclick="dropDownTgl()">Whiskeys</a>
                         <ul id="drop-down" class="position-absolute list-style-none">
                             <li><a class="text-black text-decoration-none" href="#">Irish</a></li>
                             <li><a class="text-black text-decoration-none" href="#">Scotch</a></li>
                             <li><a class="text-black text-decoration-none" href="#">Japanese</a></li>
                             <li><a class="text-black text-decoration-none" href="#">American</a></li>
                         </ul></li>
+                    
+                    <li><a class="signup text-white text-decoration-none d-none" href="/login">Sign In / Sign Up</a></li>
                 </ul>
             </div>
             
-            <div class="d-flex align-items-center">
+            <div class="right-nav d-flex align-items-center">
                 <p class="nav-quote"><i>Great whiskey delivered to your door</i></p>
                 <a href="/login" class="btn text-decoration-none">Sign In / Sign Up</a>
+            </div>
+            <div id="sidebar-toggle" class="d-none">
+                <i onclick="showSideBar()" class="fas fa-bars fa-2x text-white" style="cursor: pointer"></i>
             </div>
         </nav>
     </header>
@@ -52,7 +57,7 @@
                 <p class="sml"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
             </div>
             <video id="background-video" autoplay loop muted>
-            <source src="https://vod-progressive.akamaized.net/exp=1639517546~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F6%2F22%2F550033434%2F2607343947.mp4~hmac=ba7ead4c756423a293624363af268bf52e1afed1b4d4a1ebbf9ffd3ccf3d1213/vimeo-prod-skyfire-std-us/01/6/22/550033434/2607343947.mp4?filename=Aurora+Borealis+-+74183.mp4" type="video/mp4">
+            <source src="https://vod-progressive.akamaized.net/exp=1639562305~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F255%2F20%2F501275267%2F2283912064.mp4~hmac=f68c91a1f7963003b196b1e7d41cee00127cbf9927d9a393668a7a012e2af324/vimeo-prod-skyfire-std-us/01/255/20/501275267/2283912064.mp4?filename=Trees+-+61992.mp4" type="video/mp4">
         </video>
         </section>
 

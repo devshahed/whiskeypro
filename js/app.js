@@ -7,3 +7,11 @@ function dropDownTgl(){
         dd.style.display = "none";
     }
 }
+let sidebar = document.getElementById("sidebar");
+function showSideBar(){
+    if(sidebar.classList.contains("sidebar")){
+        sidebar.classList.remove("sidebar");
+    }else{
+        sidebar.classList.add("sidebar");
+    }
+}

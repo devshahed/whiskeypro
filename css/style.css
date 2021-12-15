@@ -85,6 +85,12 @@ nav .btn{
     color: white;
     font-weight: 600;
 }
+.sidebar{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
 /* ========= Home Part ======== */
 
 #home{
@@ -233,12 +239,24 @@ nav .btn{
         width: 100%;
         justify-content: start;
     }
+    .right-nav{
+        display: none;
+    }
 }
 @media only screen and (max-width: 576px) {
-    .ficon, .media-img {
+    .ficon, .media-img, .nav-links, .header-top {
         display: none;
+    }
+    #sidebar-toggle, .signup{
+        display: block;
     }
     .container{
         width: 100%;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-links li{
+        padding: 8px 0;
     }
 }
