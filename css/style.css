@@ -4,15 +4,17 @@
 /* ============= Tags =================== */
 body{
     font-family: 'Poppins', sans-serif;
+    background: url("/images/ef6izw27ybe41.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 section{
     padding: 50px 0;
 }
 
 /* ============ Latest blogs part ============ */
-#latestBlogs{
-    background: url("/images/singapore-g6c1197005_1920.jpg");
-}
 .card-img-top{
     opacity: 0.6;
 }
@@ -30,6 +32,3 @@ section{
 }
 
 /* ============ Latest blogs part ============ */
-#ourTeam{
-    background: url("/images/orion-nebula-g6c6f7d564_1920.jpg");
-}
