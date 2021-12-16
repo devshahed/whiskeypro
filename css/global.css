@@ -42,3 +42,6 @@
 .halo{
     font-family: 'Halo';
 }
+.outline-none{
+    outline: none;
+}
