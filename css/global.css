@@ -4,25 +4,28 @@
     padding: 0;
 }
 .background-cover{
-    background-size: cover;
+    background-size: cover!important;
 }
 .background-fixed{
-    background-attachment: fixed;
+    background-attachment: fixed!important;
 }
 .background-center{
-    background-position: center;
+    background-position: center!important;
 }
 .background-no-repeat{
-    background-repeat: no-repeat;
+    background-repeat: no-repeat!important;
 }
 .glass {
     background: rgba( 255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(62, 62, 66, 0.37);
-    backdrop-filter: blur( 5px);
-    -webkit-backdrop-filter: blur( 5px);
+    backdrop-filter: blur( 15px);
+    -webkit-backdrop-filter: blur( 15px);
     border: 1px solid rgba( 255, 255, 255, 0.1);
     border-radius: 10px;
 }
 .nunito{
     font-family: 'Nunito', sans-serif;
+}
+.text-small{
+    font-size: 0.8rem;
 }

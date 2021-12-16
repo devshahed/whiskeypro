@@ -5,9 +5,13 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+section{
+    padding: 50px 0;
+}
+
 /* ============ Latest blogs part ============ */
 #latestBlogs{
-    background: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg");
+    background: url("/images/singapore-g6c1197005_1920.jpg");
 }
 .card-img-top{
     opacity: 0.6;
@@ -17,4 +21,15 @@ body{
 }
 .card-text{
     font-size: 0.9rem;
+}
+.blog-info{
+    font-weight: 500;
+}
+.readmore-btn{
+    font-weight: 600;
+}
+
+/* ============ Latest blogs part ============ */
+#ourTeam{
+    background: url("/images/orion-nebula-g6c6f7d564_1920.jpg");
 }
