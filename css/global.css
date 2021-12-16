@@ -48,3 +48,12 @@
 .sidebar{
     display: flex!important;
 }
+.blackbg{
+    background: rgba(0, 0, 0, 0.657);
+}
+a.glass{
+    transition: 0.5s;
+}
+a.glass:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
