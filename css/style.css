@@ -76,3 +76,17 @@ input, textarea, input::placeholder, textarea::placeholder{
 footer hr{
     background: rgba(155, 154, 154, 0.424);
 }
+footer h3{
+    font-style: 1.5rem;
+}
+
+
+/* ============ Media queries ============ */
+@media only screen and (max-width: 700px) {
+    footer a{
+        font-size: 0.5rem;
+    }
+    footer h6{
+        font-size: 0.6rem;
+    }
+  }
