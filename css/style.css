@@ -1,13 +1,36 @@
 /* ============= Fonts ================ */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap');
-
+@font-face {
+    font-family:"Lucinda";
+    src: url("../fonts/LucidaHandwritingStdBold.TTF") format("truetype");
+}
+@font-face {
+    font-family:"Charu";
+    src: url("../fonts/13.\ Charu\ Chandan\ Blood\ Drip\ Unicode-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Halo";
+    src: url("../fonts/Halo.ttf");
+}
 /* ============= Tags =================== */
 body{
     font-family: 'Poppins', sans-serif;
     background: url("/images/ef6izw27ybe41.jpg");
 }
+header{
+    z-index: 999;
+}
 section{
     padding: 50px 0;
+}
+
+/* ============ Home part ============ */
+#home{
+    height: 100vh;
+}
+#home video{
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* ============ Latest blogs part ============ */
@@ -35,4 +58,9 @@ section{
     font-size: 0.8rem;
     font-style: italic;
     font-weight: 400;
+}
+
+/* ============ Footer part ============ */
+footer hr{
+    background: rgba(155, 154, 154, 0.424);
 }

@@ -29,3 +29,16 @@
 .text-small{
     font-size: 0.8rem;
 }
+.blur{
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+.lucinda{
+    font-family: 'Lucinda';
+}
+.charu{
+    font-family: 'Charu';
+}
+.halo{
+    font-family: 'Halo';
+}
