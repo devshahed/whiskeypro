@@ -3,3 +3,26 @@
     margin: 0;
     padding: 0;
 }
+.background-cover{
+    background-size: cover;
+}
+.background-fixed{
+    background-attachment: fixed;
+}
+.background-center{
+    background-position: center;
+}
+.background-no-repeat{
+    background-repeat: no-repeat;
+}
+.glass {
+    background: rgba( 255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(62, 62, 66, 0.37);
+    backdrop-filter: blur( 5px);
+    -webkit-backdrop-filter: blur( 5px);
+    border: 1px solid rgba( 255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.nunito{
+    font-family: 'Nunito', sans-serif;
+}

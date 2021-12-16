@@ -1,0 +1,20 @@
+/* ============= Fonts ================ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap');
+
+/* ============= Tags =================== */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* ============ Latest blogs part ============ */
+#latestBlogs{
+    background: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg");
+}
+.card-img-top{
+    opacity: 0.6;
+}
+.card-title{
+    font-size: 1.2rem;
+}
+.card-text{
+    font-size: 0.9rem;
+}
