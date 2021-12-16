@@ -13,14 +13,17 @@
 
 <body class="background-cover background-center background-no-repeat background-fixed blur">
     <header class="glass rounded-0 text-white position-absolute left-0 top-0 w-100">
-        <nav class="p-3 d-flex justify-content-between align-items-center">
+        <nav class="p-3 d-flex justify-content-between align-items-sm-center">
             <h4 id="compayName" class="m-0 halo"><a class="text-white text-decoration-none d-block text-center" href="/">WD</a></h4>
-            <ul class="list-unstyled d-flex justify-content-center align-items-center flex-row m-0">
-                <li class="px-2"><a href="/" class="lucinda text-white text-decoration-none p-1">Home</a></li>
-                <li class="px-2"><a href="/about.html" class="lucinda text-white text-decoration-none p-1">About</a></li>
-                <li class="px-2"><a href="/blogs.html" class="lucinda text-white text-decoration-none p-1">Blogs</a></li>
-                <li class="px-2"><a href="/contact.html" class="lucinda text-white text-decoration-none p-1">Contact</a></li>
+            <ul id="sidebar" class="list-unstyled d-sm-flex d-none justify-content-center align-items-center flex-sm-row flex-column m-0">
+                <li class="px-2 py-sm-0 py-2"><a href="/" class="lucinda text-white text-decoration-none p-1">Home</a></li>
+                <li class="px-2 py-sm-0 py-2"><a href="/about.html" class="lucinda text-white text-decoration-none p-1">About</a></li>
+                <li class="px-2 py-sm-0 py-2"><a href="/blogs.html" class="lucinda text-white text-decoration-none p-1">Blogs</a></li>
+                <li class="px-2 py-sm-0 py-2"><a href="/contact.html" class="lucinda text-white text-decoration-none p-1">Contact</a></li>
             </ul>
+            <div class="d-sm-none d-block">
+                <i onclick="showSidebar();" class="fas fa-bars fa-2x d-block" style="cursor: pointer;"></i>
+            </div>
         </nav>
     </header>
 

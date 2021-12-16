@@ -45,3 +45,6 @@
 .outline-none{
     outline: none;
 }
+.sidebar{
+    display: flex!important;
+}
